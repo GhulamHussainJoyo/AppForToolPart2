@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="pkr">PKR</string>
+    <string name="my_parts">My Parts</string>
+    <string name="app_name">AppForTool</string>
+    <string name="total">Total</string>
+    <string name="selling">Sell price</string>
+    <string name="quantity">Quantity</string>
+    <string name="title_activity_main_layout">main_layout</string>
+    <string name="title_activity_main_layout_for_action">main_layout_for_action</string>
+    <string name="title_activity_add__items__for__parts">add_Items_For_Parts</string>
+    <string name="request_field">Please fill all the fields below</string>
+
+    <string name="facebook_app_id">3053743641378084</string>
+    <string name="fb_login_protocol_scheme">fb3053743641378084</string>
+
+
+</resources>

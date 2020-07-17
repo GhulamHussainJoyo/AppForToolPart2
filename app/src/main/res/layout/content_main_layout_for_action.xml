@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".main_layout_for_action"
+    tools:showIn="@layout/activity_main_layout_for_action">
+
+
+        <GridView
+
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alignmentMode="alignMargins"
+            android:clickable="true"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:rowCount="4"
+            android:verticalSpacing="-3dp"
+
+
+            />
+
+
+
+
+</LinearLayout>
