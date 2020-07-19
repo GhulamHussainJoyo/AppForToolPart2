@@ -17,12 +17,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
-import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -40,9 +40,9 @@ public class signUp_page extends AppCompatActivity {
 
     private Button signUP;
 
+    FirebaseAuth mAuth;
+    DatabaseReference mReference;
 
-    private DatabaseReference mReference;
-    private FirebaseAuth mAuth;
 
 
 
@@ -53,9 +53,9 @@ public class signUp_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_page);
 
+        mAuth= FirebaseAuth.getInstance();
+        mReference= FirebaseDatabase.getInstance().getReference();
 
-        mReference = FirebaseDatabase.getInstance().getReference();
-        mAuth = FirebaseAuth.getInstance();
 
 
         pd=new ProgressDialog(this);
@@ -108,7 +108,7 @@ public class signUp_page extends AppCompatActivity {
                 final String password=mPassword.getEditText().getText().toString().trim();
                 final String phoneNumber=mPhoneNumber.getEditText().getText().toString().trim();
 
-                if(!TextUtils.isEmpty(fullname) || !TextUtils.isEmpty(email) || !TextUtils.isEmpty(password))
+                if(!TextUtils.isEmpty(fullname) || !TextUtils.isEmpty(email) || !TextUtils.isEmpty(password) || !TextUtils.isEmpty(phoneNumber))
 
                 {
                     if (checkEmailValidation(email))
@@ -120,7 +120,7 @@ public class signUp_page extends AppCompatActivity {
                         }
                         else
                         {
-                            RegisterUser(fullname,email,password);
+                            RegisterUser(fullname,phoneNumber,email,password);
                         }
                     }
                     else
@@ -173,7 +173,7 @@ public class signUp_page extends AppCompatActivity {
 
 
 
-    public void RegisterUser(final String fullName, final String email, String password) {
+    public void RegisterUser(final String fullName, final String phoneNumber, final String email, String password) {
 
 
 
@@ -189,6 +189,7 @@ public class signUp_page extends AppCompatActivity {
 
                 map.put("Id",mAuth.getCurrentUser().getUid());
                 map.put("Name",fullName);
+                map.put("PhoneNumber",phoneNumber);
                 map.put("email",email);
 
 

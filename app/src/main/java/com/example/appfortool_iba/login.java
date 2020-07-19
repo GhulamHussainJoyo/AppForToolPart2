@@ -16,13 +16,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+
+
 
 import java.util.HashMap;
 import java.util.regex.Matcher;
@@ -56,7 +51,7 @@ public class login extends AppCompatActivity {
         HashMap<String , Object> map=new HashMap<>();
         map.put("Abbal","Joyo");
         map.put("MyParts","Ready");
-        FirebaseDatabase.getInstance().getReference().child("User").child("Multiple values").updateChildren(map);
+        //FirebaseDatabase.getInstance().getReference().child("User").child("Multiple values").updateChildren(map);
 
 
         //FirebaseDatabase.getInstance().getReference().child("abbal").child("Anfroid").setValue("ABCD");
@@ -132,11 +127,11 @@ public class login extends AppCompatActivity {
             {
 
 
-                DatabaseReference myRef = FirebaseDatabase.getInstance().getReference();
-
-                HashMap<String,String> map=new HashMap();
-                map.put("Abi","almd");
-                myRef.push().setValue(map);
+//                DatabaseReference myRef = FirebaseDatabase.getInstance().getReference();
+//
+//                HashMap<String,String> map=new HashMap();
+//                map.put("Abi","almd");
+//                myRef.push().setValue(map);
 
             }
         });
