@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#E40114</color>
+    <color name="colorPrimary">#F12037</color>
     <color name="colorPrimaryDark">#990614</color>
     <color name="colorAccent">#D81B60</color>
     <color name="tool_color">#C0031B</color>
@@ -19,6 +19,8 @@
     <color name="facebook_color">#3b5998</color>
 
     <color name="login_background">#B60214</color>
+
+    <color name="textColorHighlight">#4DD81B60</color>
 
 
 </resources>

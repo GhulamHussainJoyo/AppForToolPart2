@@ -61,10 +61,12 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                >
 
 
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/EmailTextInputLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
@@ -89,12 +91,14 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/PasswordTextInputLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="10dp"
                     android:hint="Password..."
-
+                    android:layout_marginBottom="10dp"
                     app:passwordToggleEnabled="true"
                     app:passwordToggleTint="@color/red"
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+
+        <item name="textInputStyle">@style/AppTextField</item>
+        <item name="errorTextAppearance">@style/ErrorTextAppearance</item>
+        <item name="helperTextTextAppearance">@style/HelperTextAppearance</item>
+        <item name="hintTextAppearance">@style/HintTextAppearance</item>
+        <item name="colorOnBackground">#ffffff</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+</resources>

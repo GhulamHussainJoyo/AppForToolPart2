@@ -72,7 +72,7 @@ tools:context=".signUp_page">
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="10dp"
-
+                android:layout_marginBottom="10dp"
                 android:hint="Full Name"
 
                 app:boxCornerRadiusBottomEnd="25dp"
@@ -82,13 +82,14 @@ tools:context=".signUp_page">
 
 
 
+
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPersonName"/>
+                    android:inputType="textPersonName" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -99,15 +100,16 @@ tools:context=".signUp_page">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
-
+                android:layout_marginBottom="10dp"
             android:hint="Phone Number"
 
             app:boxCornerRadiusBottomEnd="25dp"
             app:boxCornerRadiusBottomStart="25dp"
             app:boxCornerRadiusTopEnd="25dp"
             app:boxCornerRadiusTopStart="25dp"
+            app:errorTextAppearance="@style/ErrorTextAppearance"
+
 
 
 
@@ -127,16 +129,17 @@ tools:context=".signUp_page">
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
 
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
                 android:hint="Email..."
 
                 app:boxCornerRadiusBottomEnd="25dp"
                 app:boxCornerRadiusBottomStart="25dp"
                 app:boxCornerRadiusTopEnd="25dp"
                 app:boxCornerRadiusTopStart="25dp"
-
+                app:errorTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
 
 
                 >
@@ -145,7 +148,9 @@ tools:context=".signUp_page">
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress"/>
+                    android:inputType="textEmailAddress"
+                    android:textColorHighlight="@color/textColorHighlight"
+                    />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -154,9 +159,9 @@ tools:context=".signUp_page">
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp"
+
                 android:hint="Enter Password..."
                 app:passwordToggleEnabled="true"
 
@@ -167,6 +172,7 @@ tools:context=".signUp_page">
                 app:boxCornerRadiusBottomStart="25dp"
                 app:boxCornerRadiusTopEnd="25dp"
                 app:boxCornerRadiusTopStart="25dp"
+                app:errorTextAppearance="@style/ErrorTextAppearance"
 
                 >
 
